@@ -33,7 +33,7 @@
     import * as THREE from 'three';
 
     const urlParams = new URLSearchParams(window.location.search);
-    const mode = parseInt(urlParams.get('mode')) || 0;
+    const mode = parseInt(urlParams.get('mode')) || 1;
 
     const viewer = new GaussianSplats3D.Viewer({
         'cameraUp': [0.01933, -0.75830, -0.65161],
