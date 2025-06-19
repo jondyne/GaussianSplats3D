@@ -1,4 +1,8 @@
 dist
-build
 node_modules
 **/*.DS_Store
+download_data.bat
+gaussian_splat_data.zip
+build/demo/assets/data/
+*.ksplat
+*.splat
