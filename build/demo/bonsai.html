@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>3D Gaussian Splat Demo - Truck</title>
+  <title>3D Gaussian Splat Demo - Bonsai</title>
   <script type="text/javascript" src="js/util.js"></script>
   <script type="importmap">
     {
@@ -41,7 +41,9 @@
         'initialCameraLookAt': [0.45622, 1.95338, 1.51278],
         'sphericalHarmonicsDegree': 2
     });
-    let path = 'assets/data/bonsai/bonsai' + (mode ? '_high' : '') + '.ksplat';
+    let path = mode === 2 ? 'https://3dprojectmodels.s3.eu-north-1.amazonaws.com/bonsai_trimmed.ksplat' :
+               mode === 1 ? 'https://3dprojectmodels.s3.eu-north-1.amazonaws.com/bonsai_high.ksplat' :
+                           'https://3dprojectmodels.s3.eu-north-1.amazonaws.com/bonsai.ksplat';
     viewer.addSplatScene(path, {
       'progressiveLoad': false
     })

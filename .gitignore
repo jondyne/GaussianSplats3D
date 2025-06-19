@@ -6,3 +6,4 @@ gaussian_splat_data.zip
 build/demo/assets/data/
 *.ksplat
 *.splat
+.vercel
