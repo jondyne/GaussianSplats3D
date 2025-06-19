@@ -6,11 +6,8 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/build/demo/$1"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/build/demo/$1" }
   ],
   "headers": [
     {
@@ -26,5 +23,7 @@
         }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 } 
